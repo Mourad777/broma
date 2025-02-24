@@ -22,6 +22,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { FreeChapters } from '@/components/FreeChapters'
 
 function MailIcon(props) {
   return (
@@ -259,7 +260,7 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="text-4xl mb-8 font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
           ¡Broma!
           </h1>
           {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -268,6 +269,9 @@ export default async function Home() {
             technologies that empower regular people to explore space on their
             own terms.
           </p> */}
+          <div>
+          <FreeChapters />
+          </div>
           <div className="mt-6 flex gap-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
