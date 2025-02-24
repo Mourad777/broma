@@ -10,9 +10,9 @@ export function Layout({ children }) {
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        <Header />
+        {/* <Header /> */}
         <main className="flex-auto">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )
