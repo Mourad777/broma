@@ -13,8 +13,8 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { getAllArticles } from '@/lib/articles'
 import { FreeChapters } from '@/components/FreeChapters'
+import Avatar from '@/images/avatar.jpg'
 
 
 function SocialLink({ icon: Icon, ...props }) {
@@ -53,15 +53,18 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl mb-8 font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <div className='flex items-center justify-center mb-8'>
+            <img className='object-cover w-16 h-16 rounded-full border-2 border-zinc-500 mr-4' src={Avatar.src} />
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
           ¡Broma!
           </h1>
+          </div>
+         
           {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Spencer, a software designer and entrepreneur based in New York
             City. I’m the founder and CEO of Planetaria, where we develop
