@@ -3,9 +3,9 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import {
-  GitHubIcon,
+  YoutubeIcon,
   InstagramIcon,
-  LinkedInIcon,
+  FacebookIcon,
   XIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
@@ -83,13 +83,13 @@ export default async function Home() {
             />
             <SocialLink
               href="#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
+              aria-label="Follow on Youtube"
+              icon={YoutubeIcon}
             />
             <SocialLink
               href="#"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+              aria-label="Follow on Facebook"
+              icon={FacebookIcon}
             />
           </div>
         </div>
