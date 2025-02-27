@@ -81,6 +81,7 @@ function Card({ emoji, hueA, hueB, i, question, censoredemoji, setIsModalOpen, a
     const [revealedIndex, setRevealedIndex] = useState(-1)
     return (
         <motion.div
+            key={'card'+i}
             className={`card-container-${i}`}
             style={cardContainer}
             initial="offscreen"

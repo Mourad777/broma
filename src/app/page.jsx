@@ -62,7 +62,7 @@ export default async function Home() {
           <div className='flex items-center justify-center mb-8'>
             <img className='object-cover w-16 h-16 rounded-full border-2 border-zinc-500 mr-4' src={Avatar.src} />
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          ¡Broma!
+          Broma
           </h1>
           </div>
          
